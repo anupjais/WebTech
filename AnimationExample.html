@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Animation Example</title>
+	<style type="text/css">
+		.mdiv{
+			height: 200px;
+			width: 200px;
+			position: relative;
+			background-image: linear-gradient(to right, teal, green, pink, violet);
+			top: 100px;
+			left: 100px;
+			animation-name: move;
+			animation-duration: 4s;
+			animation-iteration-count: infinite;
+			animation-direction: alternate-reverse;
+		}
+		@keyframes move{
+			25%{
+				top: 100px;
+				left: 1000px;
+				transform: rotate(360deg);
+				border-radius: 100px;
+				background-image: linear-gradient(to left, skyblue, orange, red);
+			}
+			50%{
+				top: 500px;
+				left: 1000px;
+				border-radius: 100px;
+				background-image: linear-gradient(to left, blue, teal, orangered);
+			}
+			75%{
+				top: 500px;
+				left: 100px;
+				border-radius: 100px;
+				background-image: linear-gradient(to left, skyblue, orange, red);
+			}
+			100%{
+
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="mdiv">
+		
+	</div>
+
+</body>
+</html>
